@@ -1,0 +1,29 @@
+body {
+    align-items: center;
+    width: 500px;
+    height: 250px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+header h1 {
+    color: rgb(18, 35, 227);
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+main p big{
+    color: rgb(0, 255, 204);
+    font-size: 2em;
+}
+main p strong{
+    color: rgb(255, 123, 0);
+}
+main p b{
+    color: rgb(255, 187, 0);
+    font-size: 3em;
+}
+
+main p u{
+    color: rgb(0, 94, 255);
+}
