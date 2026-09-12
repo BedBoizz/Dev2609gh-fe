@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form đăng ký tài khoản</title>
+</head>
+<body>
+    <form action="/register" method="post">
+        <H2>Đăng ký tài khoản</H2>
+
+        <!-- Tài Khoản -->
+        <div>
+            <label for="name">Họ và tên</label>
+            <input id="name" name="name" type="text"
+            required>
+        </div>
+
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email"
+            required>
+        </div>
+
+        <!-- Mật Khẩu -->
+        <div>
+            <label for="pass">Mật Khẩu</label>
+            <input id="pass" name="pass" type="password"
+            required minlength="8">
+        </div>
+
+        <!-- Giới tính -->
+        <div>
+            <label>Giới Tính</label>
+            <label> <input type="radio" name="gender" value="male" required checked>Nam</label>
+            <label> <input type="radio" name="gender"
+            value="Female" required checked>Nữ</label>
+        </div>
+
+        <!-- Đồng ý điều khoản -->
+        <div>
+            <label for=""></label>
+            <input type="checkbox" name="agree" id="agree" required>
+            <label for="argee"><i>Tôi đồng ý với điều khoản</i></label>
+        </div>
+        
+        <!-- Tiếp tục đăng ký hoặc Nhập Lại -->
+        <div>
+            <button type="submit">Đăng ký</button>
+            <button type="reset">Nhập lại</button>
+        </div>
+        
+    </form>
+</body>
+</html>

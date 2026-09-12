@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Form chọn màu -->
+    <form action="" method="post" enctype="multipart/form-data" id="formid">Lựa chọn màu
+    <input type="color" name="favcolor">
+    </form>
+    <br>
+
+    <!-- Form Lịch -->  
+    <form action="" method="post" enctype="multipart/form-data" id="formid">
+        Nhập ngày trước 1980/12/31
+        <input type="date" name="bday" max="1979-12-31"><br>
+        Nhập ngày sau 2000/01/01
+        <input type="date" name="bday" min="2000-01-02">
+    </form>
+    <br>
+
+    <!-- Thẻ lựa chọn danh sách thu gọn -->
+    <form action="" method="post" enctype="multipart/form-data" id="formid">
+        Chọn tỉnh <select name="province" id="province">
+            <option value="">--Chọn Tỉnh--</option>
+            <option value="Hn">Hà Nội</option>
+            <option value="Hcm">Hồ Chí Minh</option>
+            <option value="Hp">Hải Phòng</option>
+            <option value="Hd">Hải Dương</option>
+            <option value="Th">Thanh Hóa</option>
+            </select>
+    </form>
+    <br>
+
+    <!-- Nội dung trên nhiều dòng -->
+    <main>
+        <form action="">
+        <textarea rows="5" placeholder="Nhập nội dung tại đây"></textarea>
+    </form>
+    </main>
+
+    <style>
+        main form {width: 100%;}
+        textarea {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            resize: vertical;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/sumbit" method="post"> 
+
+        <!-- Tài khoản -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required
+            placeholder="chungtrinh@devmaster.edu.vn">
+        </div>
+
+        <!-- Mật Khẩu -->
+        <div>
+            <label for="pwd">Mật Khẩu</label>
+            <input type="password" name="pwd" id="pwd"
+            required minlength="6">
+        </div>
+
+        <!-- Độ tuổi -->
+        <div>
+            <label for="age">Tuổi</label>
+            <input type="number" name="age" id="age"
+            min="18" max="60">
+        </div>
+
+        <!-- Đăng nhập (Gửi) -->
+        <button type="submit">Gửi</button>
+    </form>
+</body>
+</html>
