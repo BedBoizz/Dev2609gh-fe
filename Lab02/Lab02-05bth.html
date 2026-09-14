@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" cellpadding="8" cellspacing="0" align="center" width="620" bgcolor="
+    #dff4d7">
+
+    <!-- Tiêu đề -->
+        <thead>
+            <tr>
+                <th colspan="2" align="center">
+                    <font color="#1a7f2b" size="5">Phiếu đăng ký tham gia chương trình khuyến mại</font>
+                </th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Họ tên -->
+            <tr>
+                <td width="200">
+                    <label for="hoten">Họ và tên</label>
+                </td>
+                <td><input type="text" name="hoten" id="hoten" value="Nguyen Ngoc Quynh Nga" size="45" required></td>
+            </tr>
+            
+            <!-- Địa chỉ -->
+            <tr>
+                <td>
+                    <label for="Diachi">Địa chỉ</label>
+                </td>
+                <td>
+                    <input type="text" name="Diachi" id="Diachi" value="2Bia Hùng Vương, Q10" size="45" required>
+                </td>
+            </tr>
+
+            <!-- SDT -->
+            <tr>
+                <td>
+                    <label for="Dienthoai">Số điện thoại</label>
+                </td>
+                <td>
+                    <input type="number" name="Dienthoai" id="Dienthoai" value="0912345678" size="45" required>
+                </td>
+            </tr>
+
+            <!-- Giới tính -->
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="phai" value="Nam" id="Nam" >
+                    <label for="Nam">Nam</label>
+                        &nbsp;&nbsp;
+                    <input type="radio" name="phai"
+                    value="Nữ" id="Nữ">
+                    <label for="Nữ">Nữ</label>
+                </td>
+            </tr>
+
+            <!-- Nghề nghiệp -->
+            <tr>
+                <td>
+                    <label for="nghenghiep">Nghề Nghiệp</label>
+                </td>
+                <td>
+                    <select name="nghenghiep" id="nghenghiep">
+                        <option>Bác sĩ</option>
+                        <option>Kỹ sư</option>
+                        <option selected>Giáo viên</option>
+                        <option>Khác</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <!-- Chọn sản phẩm -->
+            <tr>
+                <td>
+                    <label for="sanpham">Chọn sản phẩm tham gia</label>
+                </td>
+                <td>
+                    <select name="sanpham" id="sanpham" size="4" multiple>
+                        <option selected>Kem đánh răng</option>
+                        <option>Bột giặt</option>
+                        <option selected>Dầu gội đầu</option>
+                        <option>Sữa tắm</option>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Số người tham gia -->
+            </tr>
+                <td>
+                    <label for="songuoi">Số người dự đoán tham gia</label>
+                </td>
+                <td>
+                    <input type="number" name="songuoi" id="songuoi" value="2500000" min="0" step="1">
+                </td>
+            <tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Đồng ý">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" align="center">
+                    <font color="red"><b><i>Bạn đăng ký thành công</i></b></font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
