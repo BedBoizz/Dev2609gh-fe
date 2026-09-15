@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+
+        table {
+            background-color: rgb(232, 232, 232);
+        }
+
+        
+        h2 {
+            color: rgb(0, 204, 255);
+            border-bottom: 2px solid;
+        }
+
+        hr{
+            color: rgb(0, 204, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="" method="post" >
+        <table align="center" cellspacing="10" cellpading="100" border="0" width="600"  >
+            <thead>
+                <tr>
+                    <th colspan="2" align="left">
+                        <h2>Chào mừng bạn đến với tạp chí HTML5 & CSS3</h2>
+                    </th>
+                </tr>
+            </thead>
+
+            
+            <tbody>
+
+            <!-- Name  -->
+            <tr>
+                <td align="right">
+                    <label for="name">Tên đăng nhập:</label>
+                </td>
+                <td>
+                    <input type="name" name="name" id="name" required size="30">
+                </td>
+            </tr>
+
+            <!-- Pass -->
+            <tr>
+                <td align="right">
+                    <label for="pass">Mật khẩu:</label>
+                </td>
+                <td>
+                    <input type="password" name="pass" id="pass" required size="30">
+                </td>
+            </tr>
+
+            <!-- Email -->
+            <tr>
+                <td align="right">
+                    <label for="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email" required size="30"> 
+                </td>
+            </tr>
+
+            <!-- Thành phố -->
+            <tr>
+                <td align="right">
+                    <label for="thanhpho">Thành phố:</label>
+                </td>
+                <td>
+                    <input type="text" name="thanhpho"  id="thanhpho" required size="30">
+                </td>
+            </tr>
+
+            <!-- age -->
+            <tr>
+                <td align="right">
+                    <label for="age">Độ tuổi trung bình:</label>
+                </td>
+                <td >
+                    <input type="range" name="age" id="age" min="18" max="60" style="width: 200px;">
+                </td>
+            </tr>
+            
+            
+            <!-- Chủ đề -->
+            <tr>
+                <td colspan="2" style="padding-left: 90px; padding-top: 10px;">Bạn muốn theo dõi bài viết chủ đề nào ? </td>
+            </tr>
+
+            <!-- Cách 1 -->
+            <tr>
+                <td colspan="2" align="center">
+                    <div>
+                        <input type="checkbox">HTML5 cơ bản
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="checkbox">CSS3 cơ bản
+                        <br>
+                        <input type="checkbox">HTML5 nâng cao
+                        &nbsp;&nbsp;&nbsp;
+                        <input type="checkbox">CSS3 nâng cao
+                </td>
+            </tr>
+            
+
+            <!-- Cách 2
+            <tr >
+                <td >
+                    <div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="">HTML5 cơ bản</label>
+                        </div>
+
+                            <input type="checkbox" name="" id="">
+                            <label for="">HTML5 nâng cao</label>
+                    </div>
+                </td>
+
+                <td>
+                    <div>
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="">CSS3 cơ bản</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" name="" id="">
+                            <label for="">CSS3 nâng cao</label>
+                        </div>
+                    </div>
+                </td>
+            </tr> -->
+
+            <tr>
+                <td colspan="2" align="center" style="padding-left: 150px;">
+                    <input type="reset" value="Nhập lại" style="background-color: rgb(232, 232, 232); color: rgb(0, 204, 255);">
+                    <input type="submit" value="Đăng ký" style="background-color: rgb(232, 232, 232); color: rgb(0, 204, 255);">
+                </td>
+            </tr>
+
+            </tbody>
+            
+
+        </table>
+    </form>
+</body>
+</html>

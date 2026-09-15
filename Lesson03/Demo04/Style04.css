@@ -1,0 +1,13 @@
+.box{
+    box-sizing: content-box;
+    width: 180px;
+    height: auto;
+    color: cadetblue;
+    background-color: brown;
+    padding: 1rem;
+    text-align: center;
+    vertical-align: middle;
+    border: 3px solid chartreuse;
+    border-radius: .5rem
+    ;
+}

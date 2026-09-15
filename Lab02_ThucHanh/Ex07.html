@@ -4,8 +4,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+                textarea{
+                    width: 80%;
+                    height: 60px;
+                }
+            </style>
 </head>
 <body>
-    
+    <form action="" method="post">
+        <table style="background-color: rgb(247, 218, 154);" border="1" cellpadding="10" cellspacing="0" width="600 align="center">
+        <thead>
+            <tr>
+                <th colspan="2">
+                    <font style="color: rgb(1, 109, 198);" size="5">Đăng ký du lịch</font></th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <!-- Họ và tên -->
+            <tr>
+                <td style="color: rgb(5, 138, 247);">
+                    <label for="name"><b>Họ và tên</b></label>
+                    
+                </td>
+                <td>
+                    <input type="name" name="name" id="name" required placeholder="Nguyễn Văn A" size="45">
+                </td>
+            </tr>
+
+            <!-- Địa chỉ -->
+            <tr>
+                <td style="color: rgb(5, 138, 247);">
+                    <label for="diachi"><b>Địa chỉ</b></label>
+                </td>
+                <td>
+                    <input type="text" name="diachi" id="diachi" required placeholder="196 Định Công, Quận Hoàng Mai, TP Hà Nội " size="45">
+                </td>
+            </tr>
+
+            <!-- Điện thoại -->
+            <tr>
+                <td style="color: rgb(5, 138, 247);">
+                    <label for="tel"><b>Số điện thoại</b> </label>
+                </td>
+                <td>
+                    <input type="tel" name="tel" id="tel" required placeholder="091234567" size="25" max="9">
+                </td>
+            </tr>
+
+            <!-- Khách vn -->
+            <tr>
+                <td style="color: rgb(5, 138, 247);">
+                    <label for="khachvn"><b>Khách Việt Nam</b></label>
+                </td>
+                <td>
+                    <input type="checkbox" name="khachvn" id="khachvn" checked>
+                </td>
+            </tr>
+
+            <!-- Chọn Tour -->
+            <tr>
+                <td style="color: rgb(5, 138, 247);">
+                    <label for="chontour"><b>Chọn tour</b></label>
+                </td>
+                <td>
+                    <select name="chontour" id="chontour">
+                        <optgroup label="Miền Bắc">
+                            <option value="">Hà Nội - Hạ Long - Sapa</option>
+                            <option value="">Hà Nội - Chùa Hương - Ninh Bình</option>
+                            <option value="">Hà Nội - Cát Bà - Tuần Châu</option>
+                        </optgroup>
+
+                        <optgroup label="Miền Trung">
+                            <option value="">Huế - Bạch Mã - Đà Nẵng</option>
+                            <option value="">Nha Trang - Đà Lạt</option>
+                            <option value="">Buôn mê thuột - Gia lai - Kontum</option>
+                        </optgroup>
+
+                        <optgroup label="Miền Nam">
+                            <option value="">TP.HCM - Cần Thơ - Cà Mau</option>
+                            <option value="">TP.HCM - Mỹ Tho</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Phương Tiện -->
+            <tr>
+                <td style="color: rgb(5, 138, 247);">
+                    <b>Phương tiện</b>
+                </td>
+                <td>
+                    <input type="radio" name="phuongtien" id="maybay" value="Máy bay">
+                    <label for="maybay">Máy bay</label>
+                    
+                    <input type="radio" name="phuongtien" id="xeoto" value="Xe ô tô">
+                    <label for="xeoto">Xe ô tô</label>
+                </td>
+            </tr>
+
+            <!-- Số lượng đoàn khách -->
+            <tr align="center">
+                <td colspan="2" >
+                    <b>Số lượng đoàn khách</b>
+                    <div style="border: 1px solid rgb(255, 255, 255); padding: 10px; ">
+                        <div>
+                            <label for="nguoilon">Người lớn</label>
+                            <input type="tel" name="nguoilon" id="number" size="4">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <label for="treem">Trẻ em</label>
+                            <input type="tel" name="treem" id="treem" size="4">
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+
+            <!-- Ghi chú thêm -->
+            <tr>
+                <td style="color: rgb(5, 138, 247);">
+                    <label for="ghichu"><b>Ghi chú thêm</b></label>
+                </td>
+                <td>
+                    <textarea name="ghichu" id="ghichu" >Có 2 trẻ em dưới 6 tuổi 
+Có 2 người ăn chay </textarea>
+                </td>
+            </tr>
+
+            <!-- Đồng ý -->
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Đồng ý">
+                </td>
+            </tr>
+
+            <!-- Thành cong -->
+            <tr>
+                <td colspan="2" align="center" style="color: red;">
+                    <b>Bạn đăng ký thành công!!!</b>
+                </td>
+            </tr>
+    </form>
+            
+        </tbody>
+    </table>
 </body>
 </html>

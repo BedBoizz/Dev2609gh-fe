@@ -1,0 +1,15 @@
+p{
+    color: rgb(255, 127, 234);
+}
+
+h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.box{
+    width: 15rem;
+    height: 15rem;
+    background-color: black;
+}
