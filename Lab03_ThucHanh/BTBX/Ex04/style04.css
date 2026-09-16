@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  padding: 60px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.card {
+  position: relative;
+  width: 340px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* Lớp phủ tối dần từ trong suốt -> đen, chiếm nửa dưới ảnh */
+.overlay-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.75) 100%
+  );
+}
+
+/* Nhãn "Mới" - góc trên trái */
+.new {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background-color: #E24B4A;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 0;
+}
+
+/* Khối chữ - dưới cùng, nằm trên lớp gradient */
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 16px;
+  color: #ffffff;
+}
+
+.content h1 {
+  font-size: 17px;
+  margin: 0 0 8px 0;
+  font-weight: normal;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-row p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.price-row button {
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: #ffffff;
+  padding: 6px 14px;
+  border-radius: 16px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.price-row button:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}

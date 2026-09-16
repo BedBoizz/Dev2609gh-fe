@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Box chung */
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 5px solid black;
+    margin: 20px;
+    background: lightblue;
+}
+
+/* 1. content box (Mặc định) */
+.box1 {
+    box-sizing: content-box;
+}
+
+.box2 {
+    box-sizing: border-box;
+    background: lightgreen;
+}
