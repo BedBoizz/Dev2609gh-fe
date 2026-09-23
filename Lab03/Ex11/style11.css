@@ -1,0 +1,16 @@
+.layout{
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    grid-template-rows: 70px 1fr 80px;
+    grid-template-areas: 
+    "header header" 
+    "sidebar content"
+    "footer footer";
+    gap: 12px;
+    min-height: calc(100vh -24px);
+}
+
+.header{ grid-area: header;background-color: antiquewhite;}
+.sidebar{grid-area: sidebar; background-color:bisque; }
+.content{grid-area: content; background-color: aquamarine;}
+.footer{grid-area: footer; background-color: aqua;}

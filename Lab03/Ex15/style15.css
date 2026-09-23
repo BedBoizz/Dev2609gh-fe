@@ -1,0 +1,13 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background-color:violet;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: white;
+    text-align: center;
+}

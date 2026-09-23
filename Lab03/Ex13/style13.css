@@ -1,0 +1,28 @@
+/* Mobile mặc định */
+.products{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.card{
+    background-color: blueviolet;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+    color: white;
+}
+
+/* Tablet */
+@media (min-width: 768px){
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Desktop */
+@media (min-width:992px){
+    .products{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

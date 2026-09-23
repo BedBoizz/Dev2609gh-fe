@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* Logo trái - menu giữa - button phải */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    padding: 0 40px;
+    height: 70px;
+    background-color: #111;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu a:hover{
+    color: greenyellow;
+}
+
+button{
+    padding: 8px 16px;
+    border: none;
+    background: greenyellow;
+    color: white;
+    cursor: pointer;
+}
