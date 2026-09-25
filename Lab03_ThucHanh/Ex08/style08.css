@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 225, 0);
+    border-radius: 12px;
+    text-align: center;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
