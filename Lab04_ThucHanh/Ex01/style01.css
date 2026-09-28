@@ -1,0 +1,40 @@
+.card{
+    border: 3px solid rgb(255, 162, 0);
+    border-radius: 12px;
+    width: 300px;
+    background-color: ghostwhite;
+    position: relative;
+    padding: 24px 20px;
+}
+
+.info{
+    margin: 0;
+    font-size: 17px;
+    color: #333;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.price{
+    margin: 16px 0 0 0;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    color: #1a1a1a;
+}
+
+.padge{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #f89800;
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 8px;
+    transition: 0.3s;
+    transform-origin: top right;
+}
