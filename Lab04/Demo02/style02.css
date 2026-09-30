@@ -1,0 +1,13 @@
+.product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card{
+    padding: 1rem;
+    background: rgb(255, 166, 0);
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,37 @@
+/* Mobile mặc đinh */
+.products{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+}
+
+.card{
+    background-color: green;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    color: white;
+    margin: 0.5rem;
+}
+
+
+/* Desktop */
+@media (max-width: 1200px){
+    .products{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablet */
+@media (max-width: 991px){
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 767x){
+    .products{
+        grid-template-columns: 1fr;
+    }
+}

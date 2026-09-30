@@ -1,0 +1,14 @@
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.card{
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 1rem;
+    text-align: center;
+    margin: 10px;
+}
