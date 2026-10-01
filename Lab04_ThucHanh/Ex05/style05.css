@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+.main{
+    margin: 20px;
+    /* border: 1px solid; */
+    background-color: rgb(221, 221, 221);
+    padding: 20px;
+}
+.news{
+    display: grid;
+    grid-template-columns: 550px 1fr;  
+
+}
+
+.main_link{
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main_link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 3px;
+    background-color: green;
+    transition: with 0.3s;
+
+}
+
+.main_link:hover::after{
+    width: 10%;
+}
+
+/* Cột trái */
+
+.featured-posd{
+
+    /* border: 1px solid; */
+}
+.featured-posd .news_img{
+    margin-top: 30px;
+}
+
+.featured-posd .news_secondary{
+    margin: 10px 0 10px;
+    font-size: 22px;
+}
+
+.featured-posd .news_time{
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: rgb(133, 133, 133);
+}
+
+/* Cột phải */
+
+.news_list{
+    width: fit-content;
+    /* border: 1px solid; */
+    margin-top: 15px;
+}
+.post-item{
+    display: flex;
+    gap: 10px;
+    padding: 16px 0;
+    border-bottom: 1px solid rgb(196, 196, 196) ;
+}
+
+.post-item_img{
+    width: 180px;
+    height: 100px;
+    flex-shrink: 0;                  
+    object-fit: cover;
+    border-radius: 6px;
+}
+.post-item_img img{
+    width: 150px;
+    height: 100px;
+}
+
+.post-item_title{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.post-item_date{
+    font-size: 13px;
+    color: rgb(122, 122, 122);
+}
+
+.post-item:last-child{
+    border-bottom: none;
+}
