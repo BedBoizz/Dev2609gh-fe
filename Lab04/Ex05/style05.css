@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: rgb(220, 219, 219);
+    --line-color: green;
+    --text-date: rgb(133, 133, 133);
+}
+
+.main{
+    margin: 20px;
+    padding: 30px;
+    background-color: var(--bg-color);
+}
+
+.main__title{
+    font-size: 30px;
+}
+
+.main__title::after{
+    display: block;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 3px;
+    background-color:  var(--line-color);
+    margin: 0.4rem 0 1.5rem 0 ;
+}
+
+.news{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+
+.post--pig{
+    width: 650px;
+}
+
+.post__label{
+    font-size: 28px;
+    margin-top: 1.5rem;
+}
+
+.fa-clock{
+    color:var(--line-color);
+    font-size: 16px;
+}
+
+.post__date{
+    font-size: 16px;
+    margin-top: 1rem;
+    color: var(--text-date);
+}
+
+.post__content{
+    margin-top: 1rem;
+    letter-spacing: 1px;
+}
+
+/* Cột phải */
+.post--small{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 20px;
+    padding-bottom: 20px;                    
+    border-bottom: 2px solid #ccc;      
+}
+
+.post--small:last-child{
+    border-bottom: none;
+}
+
+.post--small .post__img{
+    width: 150px;
+    height: 100px;
+    object-fit:fill;
+    border-radius: 9px;
+}
