@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar{
+            display: flex;
+            align-items: center;
+            padding: 16px;
+            border-bottom: 1px solid#ccc;
+        }
+
+        .navbar__logo{
+            font-size: 24px;
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        .navbar__menu{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            margin-left: auto;
+            padding: 0;
+        }
+
+        .navbar__item{
+            padding: 8px 16px;
+        }
+
+        .navbar__link{
+            text-decoration: none;
+            color: black;
+        }
+
+        .navbar__item--active{
+            background-color: lightblue;
+        }
+
+        .navbar__search{
+            padding: 8px;
+            border: 1px solid #ccc;
+            margin-left: 16px;
+        }
+
+        .navbar__btn{
+            margin-left: 16px;
+        }
+
+        .btn{
+            background-color: lightskyblue;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar__logo" href="#">LOGO</a>
+
+        <ul class="navbar__menu">
+            <li class="navbar__item navbar__item--active">
+                <a class="navbar__link" href="#">Trang chủ</a>
+            </li>
+
+            <li class="navbar__item">
+                <a class="navbar__link" href="#">Sản phẩm</a>
+            </li>
+        </ul>
+
+        <input class="navbar__search" type="text" placeholder="Tìm kiếm...">
+
+        <button class="btn navbar__btn">Đăng nhập</button>
+    </nav>
+</body>
+</html>

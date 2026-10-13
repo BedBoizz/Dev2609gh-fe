@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .product-card{
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .product-card__title{
+            font-size: 25px;
+        }
+
+        .product-card__price{
+            color: red;
+            font-size: 20px;
+        }
+
+        .product-card__btn{
+            margin-top: 12px;
+        }
+
+        .product-card--sold-out{
+            border: 1px solid red  ;
+            opacity: 0.5;
+        }
+
+        .btn{
+            background-color: blue;
+    color: white;
+            padding: 8px 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn--disabled{
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <div class="product-card">
+            <img class="product-card__img" src="" alt="">
+            <h3 class="product-card__title">Áo thun</h3>
+            <p class="product-card__price">350.000 VND</p>
+            <button class="btn product-card__btn">Mua hàng</button>
+        </div>
+
+        <div class="product-card product-card--sold-out">
+            <img class="product-card__img" src="" alt="">
+            <h3 class="product-card__title">Quần đùi</h3>
+            <p class="product-card__price">300.000 VNĐ</p>
+            <button class="btn btn--disabled product-card__btn" disabled>Mua hàng</button>
+        </div>
+
+    </div>
+</body>
+</html>

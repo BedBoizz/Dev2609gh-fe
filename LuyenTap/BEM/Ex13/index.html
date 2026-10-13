@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .post-list{
+            max-width: 600px;
+        }
+
+        .post-list__item{
+            padding: 16px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .post-list__title{
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .post-list__date{
+            color: grey;
+            font-size: 14px;
+        }
+
+        .post-list__item--pinned{
+            background-color: #fff3cd;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="post-list">
+        <div class="post-list__item post-list__item--pinned">
+            <h2 class="post-list__title">Tiêu đề</h2>
+            <time class="post-list__date">09.09.2020</time>
+            <p class="post-list__content">Nội dung bài</p>
+        </div>
+
+        <div class="post-list__item">
+            <h2 class="post-list__title">Tiêu đề</h2>
+            <p class="post-list__date">09.09.2020</p>
+            <p class="post-list__content">Nội dung bài</p>
+        </div>
+
+        <div class="post-list__item">
+            <h2 class="post-list__title">Tiêu đề</h2>
+            <p class="post-list__date">09.09.2020</p>
+            <p class="post-list__content">Nội dung bài</p>
+        </div>
+    </div>
+</body>
+</html>

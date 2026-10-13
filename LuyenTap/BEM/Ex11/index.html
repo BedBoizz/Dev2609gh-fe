@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .profile-card{
+            padding: 16px;
+            border: 1px solid #ccc;
+        }
+
+        .profile-card__name{
+            font-size: 20px;
+
+        }
+
+        .profile-card--online{
+            border: 2px solid greenyellow;
+        }
+
+        .btn{
+            background-color: rgb(1, 191, 255);
+            color: white;
+            padding: 8px 16px;
+            border: none;
+        }
+
+        .profile-card__btn{
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img class="profile-card__avatar" src="" alt="">
+        <h3 class="profile-card__name">Hoàng Văn Kiệt</h3>
+        <p class="profile-card__job">Nghề nghiệp: Công an</p>
+        <button class="btn profile-card__btn">THEO DÕI</button>
+    </div>
+
+    <div class="profile-card profile-card--online">
+        <img class="profile-card__avatar" src="" alt="">
+        <h3 class="profile-card__name">Trần Văn Nam</h3>
+        <p class="profile-card__job">Nghề nghiệp: Cảnh sát</p>
+        <button class="btn profile-card__btn">THEO DÕI</button>
+    </div>
+</body>
+</html>

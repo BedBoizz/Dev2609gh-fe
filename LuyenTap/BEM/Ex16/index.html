@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style16.css">
+</head>
+<body>
+    <form class="login-form" action="#" method="post" >
+        <h3 class="login-form__titte">Đăng nhập</h3>
+
+        <div class="login-form_group">
+            <label class="login-form__label" for="email">Email</label>
+            <input class="login-form__input" type="email" name="email" id="email" placeholder="minhkhoa@gmail.com" required>
+        </div>
+
+        <div class="login-form_group">
+            <label class="login-form__label" for="pwd">Mật khẩu</label>
+            <input class="login-form__input login-form__input--error" type="password" name="pwd" id="pwd" required>
+            <p class="login-form__error">Mật khẩu của bạn không đúng</p>
+        </div>
+
+        <button class="btn login-form__btn" type="submit">Đăng nhập</button>
+
+        <a class="login-form__link" href="#">Quên mật khẩu</a>
+
+    </form>
+    
+</body>
+</html>

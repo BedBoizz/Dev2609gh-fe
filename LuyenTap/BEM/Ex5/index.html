@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            border: 1px solid #ccc;
+            padding: 16px;
+        }
+
+        .product__title{
+            font-size: 20px;
+        }
+
+        .product__price{
+            color: red;
+        }
+        
+        .product--sold-out{
+            opacity: 0.5;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="product">
+        <h3 class="product__title">Áo thun</h3>
+        <p class="product__price">300.000vnđ</p>
+    </div>
+
+    <div class="product product--sold-out">
+        <h3 class="product__title">Quần Jean</h3>
+        <p class="product__price">500.000vnđ</p>
+    </div>
+</body>
+</html>
