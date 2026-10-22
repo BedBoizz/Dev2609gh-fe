@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chuỗi trong JavaScript </h1>
+    <script>
+        var text = "Học Lập Trình JavaScript tại Devmaster";
+
+        document.write("<p> Chuỗi ban đầu: " + text + "<br><br>");
+        // Độ dài chuỗi
+        document.write("Độ dài chuỗi: " + text.length + "<br>");
+        // Chuyển sang chữ hoa
+        document.write("Chữ hoa: " + text.toLocaleUpperCase() + "<br>");
+        // Chuyển sang chữ thường
+        document.write("Chữ thường: " + text.toLocaleLowerCase() + "<br>");
+        // Tìm các vị trí từ
+        document.write("Vị trí chữ 'Trình': " + text.indexOf("Trình") + "<br>" );
+        // Cắt chuỗi
+        document.write("Cắt chuỗi (0-7); " + text.substring(0, 7) + "<br>");
+        // Thay thế chuỗi
+        document.write("Thay thế: " + text.replace("JavaScript", "ReactJS") + "<br>");
+        // Tách chuỗi;
+        var words = text.split(" ");
+        document.write("Sau khi tách chuỗi: <br>");
+        for (var i = 0; i < words.length; i++){
+            document.write(words[i] + "<br>")
+        }
+
+    </script>
+</body>
+</html>
