@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>DANH SÁCH SẢN PHẨM</h1>
+
+        <div class="btn-box">
+            <button onclick="loadProducts()">Load sản phẩm</button>
+        </div>
+
+        <div id="productTable"></div>
+    </div>
+
+    <script>
+        // Hàm đối tượng Product
+            function Product(id, name, quantity, price, status){
+                this.id = id;
+                this.name = name;
+                this.quantity = quantity;
+                this.price = price;
+                this.status = status;
+            }
+
+        // Danh sách 05 sản phẩm
+            const productList = [
+                new Product(1, "Laptop Dell", 10, 15000000, "Còn hàng"),
+                new Product(2, "Chuột Logitech", 25, 15000000, "Còn hàng"),
+                new Product(3, "Bàn phím Dareu", 15, 15000000, "Còn hàng"),
+                new Product(4, "Bàn phím LG", 8, 15000000, "Còn hàng"),
+                new Product(5, "USB Kingston", 0, 15000000, "Hết hàng"),
+            ];
+
+        // Hàm hiển thị danh sách sản phẩm bằng DOM
+            function loadProducts(){
+                let html = `
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Trạng thái</th>
+                            </tr>
+                        </thead>
+                    <tbody>
+                `;
+
+                    for(let i = 0; i < productList.length; i++){
+                        html += `
+                            <tr>
+                                <td>${productList[i].id}</td>
+                                <td>${productList[i].name}</td>
+                                <td>${productList[i].quantity}</td>
+                                <td>${productList[i].price.toLocaleString('vi-VN')} đ</td>
+                                <td>"${productList[i].status === 'Còn hàng' ? 'con hang' : 'het hang'}"</td>
+
+                                    ${productList[i].status}
+                                </td>
+                            </tr>
+                        `;
+                    }
+
+                html += `
+                        <tbody>
+                    </table>
+                `;
+
+                document.getElementById("productTable").innerHTML = html
+            }
+    </script>
+</body>
+</html>

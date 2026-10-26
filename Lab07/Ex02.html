@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM thao tác với các thuộc tính của phân tử HTML</h1>
+    <h3>Ví dụ: Thay đổi ảnh </h3>
+    <div>
+        <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRc9k_533zVjSQyxLccfeX7hAwiwKB6GBPI171j7yufvw&s=10" alt="" width="200">
+    </div>
+
+    <button onclick="changeImage()">Đổi ảnh</button>
+
+    <script>
+        function changeImage() {
+            document.getElementById("myImage").src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx2Sc2wFe6AbRBE6Seas5EJtOsgG-2iofZw0hjEttI3UcPXh1aYhPArttQ&s=10"
+        }
+    </script>
+</body>
+</html>
