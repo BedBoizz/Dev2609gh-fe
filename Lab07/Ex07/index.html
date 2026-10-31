@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./style.css" />
+        <script src="./main.js"></script>
+    </head>
+    <body>
+        <section id="form">
+            <form action="" method="post">
+                <h1 class="text-center green">Đăng ký thành viên</h1>
+
+                <!-- Nhập họ và tên -->
+                <div class="form-group">
+                    <label for="hoten">Họ và tên</label>
+                    <input
+                        type="text"
+                        name="hoten"
+                        id="hoten"
+                        placeholder="Nhập họ và tên"
+                    />
+                    <span id="errHoten" class="">Ví dụ: Nguyễn Quốc Hùng</span>
+                </div>
+
+                <!-- Nhập Email -->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                    <span class="">Ví dụ: example@gmail.com</span>
+                </div>
+
+                <!-- Nhập số điện thoại -->
+                <div class="form-group">
+                    <label for="phone">Số điện thoại</label>
+                    <input
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        class="form-control"
+                        placeholder="Nhập số điện thoại"
+                    />
+                    <span class="">Ví dụ: 091234567 hoặc +8491234567</span>
+                </div>
+
+                <!-- Chọn giới tính -->
+                <div class="form-group">
+                    <label for="gender">Giới tính</label>
+                    <div>
+                        <input type="radio" name="gt" id="gtNam" />
+                        <label for="gtNam">Nam</label>
+
+                        <input type="radio" name="gt" id="gtNu" />
+                        <label for="gtNu">Nam</label>
+
+                        <input type="radio" name="gt" id="gtKhac" />
+                        <label for="gtKhac">Khac</label>
+                    </div>
+                </div>
+
+                <!-- Chọn sở thích -->
+                <div class="form-group">
+                    <label for="sothich">Giới tính</label>
+                    <div>
+                        <input type="checkbox" name="sothich" id="stBongDa" />
+                        <label for="stBongDa">Bóng đá</label>
+
+                        <input type="checkbox" name="sothich" id="stAmNhac" />
+                        <label for="stAmNhac">Âm nhạc</label>
+
+                        <input type="checkbox" name="sothich" id="stDulich" />
+                        <label for="stDulich">Du lịch</label>
+
+                        <input type="checkbox" name="sothich" id="stDocSach" />
+                        <label for="stDocSach">Đọc sách</label>
+                    </div>
+                </div>
+
+                <!-- Nhập mật khẩu-->
+                <div class="form-group">
+                    <label for="matkhau">Mật khẩu</label>
+                    <input
+                        type="password"
+                        name="matkhau"
+                        id="matkhau"
+                        placeholder="Nhập mật khẩu"
+                    />
+                    <span class="">Ví dụ: Mk@12345</span>
+                </div>
+
+                <!-- Nhập lại mật khẩu-->
+                <div class="form-group">
+                    <label for="xnmatkhau">Xác nhận mật khẩu</label>
+                    <input
+                        type="password"
+                        name="xnmatkhau"
+                        id="xnmatkhau"
+                        placeholder="Nhập lại mật khẩu"
+                    />
+                    <span class="">Ví dụ: Mk@12345</span>
+                </div>
+
+                <!-- Ghi chú địa chỉ -->
+                <div class="form-group">
+                    <label for="diachi"> địa chỉ</label>
+                    <textarea
+                        name="diachi"
+                        id="diachi"
+                        rows="4"
+                        class="form-control"
+                    ></textarea>
+                    <span class=""
+                        >Ví dụ: Số 36, Làng vũ đại, Xã nam định, TP Nam
+                        định</span
+                    >
+                </div>
+
+                <!-- Nút đăng ký -->
+                <div class="text-center">
+                    <button
+                        class="btn btn-dangky"
+                        onclick="return fn_dangky();"
+                    >
+                        Đăng ký
+                    </button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
