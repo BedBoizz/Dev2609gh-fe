@@ -22,12 +22,12 @@ let c = parseInt(prompt("Nhập số c vào đây: "));
 let delta = b ** 2 - 4 * a * c;
 // Điều kiện
 if (delta > 0) {
-  let x1 = (-b + Math.sqrt(delta)) / (2 * a);
-  let x2 = (-b - Math.sqrt(delta)) / (2 * a);
-  console.log(`PT có 2 nghiệm lần lượt là: x1 = ${x1} và x2 = ${x2}`);
+    let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+    let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+    console.log(`PT có 2 nghiệm lần lượt là: x1 = ${x1} và x2 = ${x2}`);
 } else if (delta === 0) {
-  let x1 = -b / (2 * a);
-  console.log(`PT có nghiệm kép x1=x2 = ${x1}`);
+    let x1 = -b / (2 * a);
+    console.log(`PT có nghiệm kép x1=x2 = ${x1}`);
 } else {
-  console.log(`PT vô nghiệm`);
+    console.log(`PT vô nghiệm`);
 }

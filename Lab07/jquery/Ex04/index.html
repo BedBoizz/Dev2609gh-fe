@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="./jquery-4.0.0.min.js"></script>
+        <script>
+            $(document).ready(function ($) {
+                //fload file htlml vào id content
+                $("#content").load("tabs/html.html");
+                $("#main ul li a").click(function (event) {
+                    //Xoá class selected của thẻ a
+                    $("a").removeClass("selected");
+                    //lấy id của thẻ a được click
+                    id = event.target.id;
+                    //add lại class slected vào thẻ a có id được click
+                    $("#" + id).addClass("selected");
+                    //load lại content vào thẻ id container
+                    $("#content").load("tab/" + id + ".html");
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="main" class="clearfix">
+            <ul>
+                <li>
+                    <a href="javascript:void(0)" class="selected" id="html"
+                        >HTML</a
+                    >
+                </li>
+                <li><a href="javascript:void(0)" id="css">CSSL</a></li>
+                <li><a href="javascript:void(0)" id="jquery">JQUERY</a></li>
+                <li><a href="javascript:void(0)" id="php">PHP</a></li>
+            </ul>
+
+            <div id="content"></div>
+        </div>
+
+        <style>
+            .clearfix {
+                clear: both;
+                overflow: hidden;
+            }
+
+            #main ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            #main ul li {
+                float: left;
+                margin-right: 5px;
+            }
+
+            #main ul li a {
+                border-left: solid 1px #ccc;
+                border-right: solid 1px #ccc;
+                border-top: solid 1px #ccc;
+                padding: 8px 20px;
+                display: block;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                text-decoration: none;
+                background-color: #d2d3d5;
+                color: #000;
+            }
+
+            .selected {
+                border-bottom: solid 1px #fff;
+                background-color: #782 !important;
+                color: #fff !important;
+            }
+
+            #content {
+                border: solid 1px #ccc;
+                width: 500px;
+                height: 300px;
+                margin-top: -1px;
+                padding: 5px 10px;
+            }
+        </style>
+    </body>
+</html>
