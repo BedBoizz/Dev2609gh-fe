@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./CSS/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h2>Giỏ hàng</h2>
+            <div class="cart-layout">
+                <!-- Danh sách sản phẩm -->
+
+                <div class="cart-products">
+                    <div id="cart-list">
+                        <!-- JavaScript sẽ hiển thị sản phẩm ở đây -->
+                    </div>
+                </div>
+
+                <!-- Tóm tắt đơn hàng -->
+                <div class="cart-summary">
+                    <h3>Tóm tắt đơn hàng</h3>
+
+                    <div class="summary-row">
+                        <span>Tổng thành tiền</span>
+                        <span class="free">Free ship</span>
+                    </div>
+
+                    <p class="shipping-note">
+                        (Miễn phí vận chuyển với đơn hàng 10 triệu)
+                    </p>
+
+                    <p class="shipping-info">
+                        Thông tin vận chuyển: Sản phẩm sẽ được Hoàng Hoàn giao
+                        trong vòng 2-7 ngày
+                    </p>
+
+                    <hr />
+
+                    <div class="summary-row total">
+                        <span>Tổng tiền</span>
+                        <span id="total">0 VND</span>
+                    </div>
+
+                    <div class="summary-button">
+                        <button id="checkout">Đặt hàng ngay</button>
+                        <button id="continue-shopping">
+                            Tiếp tục mua hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0/jquery.min.js"></script>
+
+        <script src="./JS/main.js"></script>
+
+        <!-- <div
+            class="cart-item"
+            data-id="${product.id}"
+            data-prrice="${$product.price}"
+        >
+            <img
+                src="${product.image}"
+                class="product-imge"
+                alt="${product.title}"
+            />
+
+            <div class="product-info">
+                <h4>${product.title}</h4>
+
+                <div class="quantity">
+                    <button class="decreasr">-</button>
+
+                    <input
+                        type="number"
+                        class="qty"
+                        value="${product.qty}"
+                        min="1"
+                    />
+
+                    <button class="increase">+</button>
+                </div>
+
+                <p class="price">
+                    Giá:
+                    <span>${formatMoney(product.price)}</span>
+                </p>
+
+                <p class="line-total">
+                    Thành tiền:
+                    <span>${formatMoney}(product.thanhtien)</span>
+                </p>
+            </div>
+
+            <div class="product-actions">
+                <button class="delete">X</button>
+                <button class="update">Cập nhập</button>
+            </div>
+        </div> -->
+    </body>
+</html>
